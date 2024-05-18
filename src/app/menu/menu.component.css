@@ -2,6 +2,12 @@
     flex: 1 1 auto;
   }
   
+  .space {
+   
+padding-left: 20px;
+
+  }
+
   img{
 
     height: 60px;
