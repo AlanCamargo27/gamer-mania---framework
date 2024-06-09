@@ -34,98 +34,26 @@
 
         <mat-grid-list cols="4" rowHeight="1:1.5">
 
-            <mat-grid-tile>
+            <mat-grid-tile *ngFor="let produto of produtos">
 
                 <mat-card class="example-card">
 
-                    <img mat-card-image src="./assets/img/alien.jpg" alt="jogo de terror">
+                    <img mat-card-image src="./assets/img/{{produto.foto}}" alt="{{produto.descricao}}">
 
                     <mat-card-header>
-                        <mat-card-title>Varginha: O retorno</mat-card-title>
+                        <mat-card-title>{{produto.produto}}</mat-card-title>
                     </mat-card-header>
 
                     <mat-card-content>
                         <p>
-                            Descrição do jogo.
+                            {{produto.descricao}}
                         </p>
                     </mat-card-content>
                     <mat-card-actions>
-                        <p>R$ 310,00</p>
+                        <p>{{produto.preco | currency : 'BRL'}}</p>
                         <button mat-button>Comprar</button>
                     </mat-card-actions>
                 </mat-card>
-
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-
-                <mat-card class="example-card">
-
-                    <img mat-card-image src="./assets/img/corrida2.jpg" alt="jogo de corrida">
-
-                    <mat-card-header>
-                        <mat-card-title>Velhotes&Furidosos</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição do jogo.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <p>R$ 280,00</p>
-                        <button mat-button>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-
-
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-
-                <mat-card class="example-card">
-
-                    <img mat-card-image src="./assets/img/warrior.jpg" alt="jogo de guerra">
-
-                    <mat-card-header>
-                        <mat-card-title>World War</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição do jogo.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <p>R$ 190,00</p>
-                        <button mat-button>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-
-
-            </mat-grid-tile>
-
-            <mat-grid-tile>
-
-                <mat-card class="example-card">
-
-                    <img mat-card-image src="./assets/img/magia.jpg" alt="jogo de RPG">
-
-                    <mat-card-header>
-                        <mat-card-title>O mago é implacável</mat-card-title>
-                    </mat-card-header>
-
-                    <mat-card-content>
-                        <p>
-                            Descrição do jogo.
-                        </p>
-                    </mat-card-content>
-                    <mat-card-actions>
-                        <p>R$ 370,00</p>
-                        <button mat-button>Comprar</button>
-                    </mat-card-actions>
-                </mat-card>
-
 
             </mat-grid-tile>
 
@@ -142,7 +70,7 @@
                     <img mat-card-image src="./assets/img/gaming-pc-.png" alt="PC gamer">
 
                     <mat-card-header>
-                        <mat-card-title> PC GAMER</mat-card-title>
+                        <mat-card-title> PC Gamer</mat-card-title>
                     </mat-card-header>
 
                     <mat-card-content>

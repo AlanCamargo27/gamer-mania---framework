@@ -2,24 +2,31 @@
   "produtos": [
     {
       "id": "1",
-      "produto": "jogo 1",
-      "descrição": "descrição 1",
-      "foto": "jogo1.PNG",
-      "preco": 300
+      "produto": "Velhotes&Furidosos",
+      "descricao": "Jogo de Corrida",
+      "foto": "corrida1.jpg",
+      "preco": 274.97
     },
     {
       "id": "2",
-      "produto": "jogo 2",
-      "descrição": "descrição 2",
-      "foto": "jogo2.PNG",
-      "preco": 200
+      "produto": "Varginha: O retorno",
+      "descricao": "Jogo de Terror",
+      "foto": "alien.jpg",
+      "preco": 171.71
     },
     {
       "id": "3",
-      "produto": "jogo 3",
-      "descrição": "descrição 3",
-      "foto": "jogo3.PNG",
-      "preco": 100
+      "produto": "O Mago é Implacavel",
+      "descricao": "Jogo de RPG",
+      "foto": "magia.jpg",
+      "preco": 390
+    },
+    {
+      "id": "r0_-fiR",
+      "produto": "World War",
+      "descricao": "Jogo de Guerra",
+      "foto": "warrior.jpg",
+      "preco": 279
     }
   ]
 }

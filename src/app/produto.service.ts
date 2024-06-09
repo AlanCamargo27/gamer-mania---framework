@@ -28,14 +28,14 @@ cadastrarProduto(produto:Produto):Observable<Produto[]>{
 }
 
 atualizaProduto(id:any, produto: Produto): Observable<Produto[]>{
-  const urlAtualizar = `${this.url}?${id}` ;
+  const urlAtualizar = `${this.url}/${id}` ;
   return this._httpClient.put<Produto[]>(urlAtualizar, produto);
 
 }
 
 removerProduto(id:any): Observable<Produto[]>{
-  const urlDeletar = `${this.url}?${id}` ;
-  return this._httpClient.delete<Produto[]>(urlDeletar) ;
+  const urlDeletar = `${this.url}/${id}` ;
+  return this._httpClient.delete<Produto[]>(urlDeletar);
 
 }
 
